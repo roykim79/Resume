@@ -150,9 +150,8 @@ p{
 /* Links */
 
 a{
-	color: white;
+	color: green;
 	text-decoration: none;
-	text-shadow: 1px 1px 0 black;
 }
 p a:hover{
 	color: blue;
@@ -220,7 +219,9 @@ header span{
 	font-size: 18px;
 	list-style: none;
 	padding-left: 5px;
-	text-decoration: none;	
+	text-decoration: none;
+	text-shadow: 1px 1px 0 black;
+
 }
 .navbar a{
 	color: #FFFFFF;
