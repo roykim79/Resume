@@ -106,7 +106,7 @@ i, em{
  /* Custom Styles */
 
 body{
-	background-color: #F0F0F0;
+	background-color: #E6E6E6;
 	color: black;
 	font-family: 'Donegal One', serif;
 }
@@ -150,16 +150,12 @@ p{
 /* Links */
 
 a{
-	color: #009900;
+	color: white;
 	text-decoration: none;
+	text-shadow: 1px 1px 0 black;
 }
-.navbar a{
-	color: #000000;
-	font-family: 'Roboto Condensed';
-	text-decoration: none;
-}
-a:hover{
-	color: #0000CC;
+p a:hover{
+	color: blue;
 }
 
 /* Lists */
@@ -201,27 +197,43 @@ header{
 }
 header h1{
 	color: #FFFFFF;
+	text-shadow: 1px 1px 0 black;
 }
 header span{
 	color: #000000;
 	font-size: 18px;
+	text-shadow: none;
 }
 .head-right{
 	float: right;
 	position: relative;
 		bottom: 20px;
 		left: 10px;
+	width: 350px;
 }
 
 /* Nav */
 
 .navbar li{
 	display: inline;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
 	font-size: 18px;
-	font-weight: bold;
 	list-style: none;
+	padding-left: 5px;
+	text-decoration: none;	
+}
+.navbar a{
+	color: #FFFFFF;
+}
+.navbar li:after{
+	content: '/';
 	padding-left: 10px;
+}
+.navbar li:last-child:after{
+	content: none;
+}
+.navbar a:hover{
+	color: #000000;
 }
 
 /* Footer */
