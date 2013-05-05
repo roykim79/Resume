@@ -73,8 +73,6 @@ i, em{
 }
 .col-2 {
 	float: left;
-	margin-bottom: 20px;
-	margin-top: 10px;	
 	width: 460px;
 
 }
@@ -107,6 +105,7 @@ i, em{
 
 body{
 	background-color: #E6E6E6;
+	background: url(img/textured_paper.png);
 	color: black;
 	font-family: 'Donegal One', serif;
 }
@@ -191,11 +190,13 @@ ul{
 
 header{
 	background-color: #888888;
-	margin-bottom: 30px;
-	padding: 20px 10px;
+	background: linear-gradient(rgba(90,95,100,1), rgba(130,150,185,1));
+	margin-bottom: 20px;
 }
 header h1{
 	color: #FFFFFF;
+	line-height: 63px;
+	padding-left: 10px;
 	text-shadow: 1px 1px 0 black;
 }
 header span{
@@ -204,37 +205,36 @@ header span{
 	text-shadow: none;
 }
 .head-right{
-	float: right;
-	position: relative;
-		bottom: 20px;
-		left: 10px;
-	width: 350px;
+	padding-right: 10px;
+	text-align: right;
 }
 
 /* Nav */
-
+.navbar{
+	line-height: 60px;
+}
 .navbar li{
-	display: inline;
+	display: inline-block;
 	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	list-style: none;
-	padding-left: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 	text-decoration: none;
-	text-shadow: 1px 1px 0 black;
-
 }
 .navbar a{
 	color: #FFFFFF;
-}
-.navbar li:after{
-	content: '/';
-	padding-left: 10px;
-}
-.navbar li:last-child:after{
-	content: none;
+	display: block;
+	height: 100%;
+	line-height: 75px;
+	width: 100%;
 }
 .navbar a:hover{
-	color: #000000;
+	color: rgb(175,175,175);
+}
+.navbar li:hover{
+	background: linear-gradient(rgba(70,75,80,1), rgba(110,130,165,1));
+
 }
 
 /* Footer */
