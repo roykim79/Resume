@@ -1,0 +1,214 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+b, strong{
+	font-weight: bold;
+}
+i, em{
+	font-style: italic;
+}
+
+/* - - - - - - - - - - START HERE - - - - - - - - - -*/
+
+
+/* Grid */
+
+.container{
+	margin: 0 auto;
+	width: 500px;
+}
+
+/* Clear Fix */
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+	clear: both;
+	*zoom: 1;
+}
+ /* Custom Styles */
+
+body{
+	color: black;
+	font-family: helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 auto;
+	text-align: center;
+	width: 960px;
+}
+
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6{
+	color: black;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+h1{
+	font-size: 36px;
+	padding-top: 20px;
+}
+h2{
+	font-size: 24px;
+}
+h3{
+	font-size: 18px;
+}
+h4{
+	font-size: 16px;
+}
+h5{
+	font-size: 14px;
+}
+h6{
+	font-size: 12px;
+}
+p{
+	font-size: 14px;
+}
+
+/* Links */
+
+
+/* Lists */
+
+.main{
+	margin: 20px auto;
+	width: 360px;
+}
+.month{
+	width: 254px;
+}
+
+li{
+	background: rgb(205,205,205);
+	border-bottom: 1px solid rgb(105,105,105);
+	border-right: 1px solid rgb(105,105,105);
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	width: 50px;
+}
+
+
+
+/* Misc Styles */
+
+.day{
+	background: rgb(155,155,155);
+	border-right: 1px solid rgb(155,155,155);
+	color: rgb(105,105,105);
+	line-height: 28px;
+	width: 50px;
+}
+.event-date{
+	line-height: 14px;
+	margin-top: 18px;
+}
+.important{
+	background: rgb(255,255,255);
+	color: rgb(100,150,200);
+}
+.now{
+	color: white;
+}
+.preview{
+	color: rgb(105,105,105);
+}
+.bottom{
+	border-bottom: none;
+}
+.right{
+	border-right: none;
+}
+.tint{
+	background: rgb(100,150,200);
+}
+.mark{
+	background: green;
+	border-radius: 50%;
+	height: 6px;
+	margin: 5px 22px 7px;
+	width: 6px;
+}
+.mark-today{
+	background: white;
+	border-radius: 50%;
+	height: 6px;
+	margin: 5px 22px 7px;
+	width: 6px;
+}
+.bl{
+	border-bottom-left-radius: 5px;
+}
+.br{
+	border-bottom-right-radius: 5px;
+}
+.tl{
+	border-top-left-radius: 5px;
+}
+.tr{
+	border-top-right-radius: 5px;
+}
+
+/* Header */
+
+
+/* Nav */
+
+
+/* Footer */
+
