@@ -105,7 +105,7 @@ i, em{
 
 body{
 	background-color: #E6E6E6;
-	background: url(img/textured_paper.png);
+	background: url(img/agsquare.png);
 	color: black;
 	font-family: 'Donegal One', serif;
 }
@@ -141,7 +141,7 @@ h6{
 }
 p{
 	color: black;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 24px;
 	padding-bottom: 16px;
 }
@@ -153,7 +153,7 @@ a{
 	text-decoration: none;
 }
 p a:hover{
-	color: blue;
+	color: #888888;
 }
 
 /* Lists */
@@ -161,8 +161,13 @@ p a:hover{
 li{
 	line-height: 24px;
 }
+ol{
+	font-size: 14px;
+	list-style: decimal;
+	padding-bottom: 20px;
+}
 ul{
-	font-size: 16px;
+	font-size: 14px;
 	list-style: disc;
 }
 .bullets{
@@ -175,12 +180,12 @@ ul{
 	text-align: center;
 }
 .center img{
-	border-radius: 100px;
+	border-radius: 5px;
 }
 .loc{
 	color: #888888;
 	font-family: Quicksand, serif;
-	font-size: 16px;
+	font-size: 14px;
 	font-style: italic;
 	font-weight: normal;
 	letter-spacing: -1px;
@@ -234,13 +239,16 @@ header span{
 }
 .navbar li:hover{
 	background: linear-gradient(rgba(70,75,80,1), rgba(110,130,165,1));
-
 }
 
 /* Footer */
 
 footer{
 	margin-bottom: 30px;
+}
+.copy{
+	color: rgb(175,175,175);
+	font-size: 12px;
 }
 .foot-right{
 	text-align: right;
