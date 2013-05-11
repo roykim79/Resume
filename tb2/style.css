@@ -1,0 +1,230 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+b, strong{
+	font-weight: bold;
+}
+i, em{
+	font-style: italic;
+}
+/* Start here */
+
+
+.container{
+	margin: 0 auto 0 0px;
+	width: 960px;	
+}
+.col-1,
+.col-2,
+.col-3,
+.col-x{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.col-1{
+	float: left;
+	width: 120px;
+	text-align: center;
+}
+.col-2{
+	float: left;
+	width: 220px;
+}
+.col-3{
+	float: left;
+	width: 510px
+}
+.col-x{
+	float: left;
+	width: 800px;
+}
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+	clear: both;
+	*zoom: 1;
+}
+
+/* Custom Styles*/
+
+body{
+	background: rgb(245,245,245);
+	font-family: 'Quicksand', sans-serif;
+}
+section{
+
+}
+
+/* Typography */
+
+
+h1, h2, h3, h4, h5, h6{
+	color: black;
+	font-family: 'Roboto Condensed', helvetica, arial, sans-serif;
+	font-weight: bold;
+}
+h1{
+	color: #FF0000;
+	font-size: 60px;
+	line-height: 90px;
+	padding-left: 100px;
+}
+h2{
+	font-size: 48px;
+	line-height: 60px;
+}
+h3{
+	font-size: 36px;
+	line-height: 45px;
+}
+h4{
+	font-size: 24px;
+	line-height: 30px;
+	text-decoration: underline;
+}
+h5{
+	font-size: 18px;
+	line-height: 22px;
+}
+h6{
+	font-size: 16px;
+	line-height: 20px;
+}
+p{
+	font-size: 16px;
+	line-height: 20px;
+}
+
+/* Links */
+
+a{
+	color: #033649;
+	text-decoration: none;
+}
+a:hover{
+	color: #036564;
+	text-transform: uppercase;
+}
+p a.button{
+    background: radial-gradient(#033649, #031634);
+    line-height: 30px;
+}
+p a:hover{
+	background: radial-gradient(#031634, #033649);
+	color: #CDB380; 
+}
+
+/* Lists */
+
+ol{
+	line-height: 30px;
+	list-style: lower-alpha; 
+	padding-left: 30px;
+}
+
+/* Misc Styles */
+
+.center{
+	text-align: center;
+}
+.pad-top{
+	padding-top: 20px;
+}
+img{
+	padding: 10px 0;
+}
+.right{
+	float: right;
+}
+/* Header */
+
+header{
+	background: linear-gradient(to right, #031634, #033649);
+	margin-bottom: 5px;
+}
+.title{
+	color: #E8DDCB;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	font-style: italic;
+}
+
+/* Nav */
+
+.button{
+	color: #E8DDCB;
+    text-decoration: none;
+}
+.col-1 .nav-box{
+    background: radial-gradient(#033649, #031634);
+    margin-top: 5px;
+    line-height: 100px;
+}
+a.button{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.nav-box:hover{
+	background: radial-gradient(#031634, #033649);
+}
+.nav-box a:hover{
+	color: #CDB380;
+	text-transform: uppercase;
+}
+/* Footer */
+
+footer{
+	padding: 30px 10px;
+}
+footer li{
+	display: inline;
+}
+footer .col-x{
+	float: right;
+}
