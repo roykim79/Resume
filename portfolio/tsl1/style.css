@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+b, strong{
+	font-weight: bold;
+}
+i, em{
+	font-style: italic;
+}
+
+/* - - - - - - - - - - START HERE - - - - - - - - - -*/
+
+
+/* Grid */
+
+.container{
+	margin: 0 auto;
+	width: 960px;
+}
+.col-1,
+.col-3 {
+	margin: 10px 10px;
+	padding-bottom: 20px;
+}
+.col-1 {
+	float: left;
+	width: 220px;
+}
+.col-2 {
+	float: left;
+	width: 460px;
+
+}
+.col-3 {
+	border-bottom: 1px solid #888888;
+	float: left;
+	width: 700px;
+}
+.col-4{
+	margin-bottom: 20px;
+	width: 940px;
+}
+
+
+/* Clear Fix */
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+	clear: both;
+	*zoom: 1;
+}
+ /* Custom Styles */
+
+body{
+	background-color: #E6E6E6;
+	background: url(img/agsquare.png);
+	color: black;
+	font-family: 'Donegal One', serif;
+}
+
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6{
+	color: black;
+	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+h1{
+	font-size: 36px;
+}
+h2{
+	font-size: 24px;
+	line-height: 30px;
+}
+h3{
+	font-size: 18px;
+	margin-bottom: 18px;
+}
+h4{
+	font-size: 16px;
+	margin-bottom: 16px;
+}
+h5{
+	font-size: 14px;
+}
+h6{
+	font-size: 12px;
+}
+p{
+	color: black;
+	font-size: 14px;
+	line-height: 24px;
+	padding-bottom: 16px;
+}
+
+/* Links */
+
+a{
+	color: green;
+	text-decoration: none;
+}
+p a:hover{
+	color: #888888;
+}
+
+/* Lists */
+
+li{
+	line-height: 24px;
+}
+ol{
+	font-size: 14px;
+	list-style: decimal;
+	padding-bottom: 20px;
+}
+ul{
+	font-size: 14px;
+	list-style: disc;
+}
+.bullets{
+	padding: 0px 20px;
+}
+
+/* Misc Styles */
+
+.center{
+	text-align: center;
+}
+.center img{
+	border-radius: 5px;
+}
+.loc{
+	color: #888888;
+	font-family: Quicksand, serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: normal;
+	letter-spacing: -1px;
+}
+
+/* Header */
+
+header{
+	background-color: #888888;
+	background: linear-gradient(rgba(90,95,100,1), rgba(130,150,185,1));
+	margin-bottom: 20px;
+}
+header h1{
+	color: #FFFFFF;
+	line-height: 63px;
+	padding-left: 10px;
+	text-shadow: 1px 1px 0 black;
+}
+header span{
+	color: #000000;
+	font-size: 18px;
+	text-shadow: none;
+}
+.head-right{
+	padding-right: 10px;
+	text-align: right;
+}
+
+/* Nav */
+.navbar{
+	line-height: 60px;
+}
+.navbar li{
+	display: inline-block;
+	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	list-style: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-decoration: none;
+}
+.navbar a{
+	color: #FFFFFF;
+	display: block;
+	height: 100%;
+	line-height: 75px;
+	width: 100%;
+}
+.navbar a:hover{
+	color: rgb(175,175,175);
+}
+.navbar li:hover{
+	background: linear-gradient(rgba(70,75,80,1), rgba(110,130,165,1));
+}
+
+/* Footer */
+
+footer{
+	margin-bottom: 30px;
+}
+.copy{
+	color: rgb(175,175,175);
+	font-size: 12px;
+}
+.foot-right{
+	text-align: right;
+	word-spacing: 20px;
+}
+.foot-right p{
+	line-height: 16px;
+	padding-top: 16px;
+}
