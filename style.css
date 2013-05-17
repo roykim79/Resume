@@ -279,7 +279,7 @@ a{
 	color: white;
 }
 a:hover{
-
+	color: #888;
 }
 .g1 a:hover{
 	color: white;
@@ -295,11 +295,11 @@ a:hover{
 	text-decoration: none;
 	width: 100%;
 }
+p a{
+	background-color: yellow;
+}
 /*----lists----*/
 
-dl{
-
-}
 dt{
 	font-family: 'Roboto Condensed', helvetica, arial, sans-serif;
 	font-size: 18px;
@@ -316,17 +316,17 @@ dd{
 li{
 	line-height: 24px;
 }
-ol{
-	font-family: 'Donegal One', serif;
-	font-size: 14px;
-	line-height: 18px;
-	list-style: decimal;
-	padding-bottom: 20px;
-}
+ol,
 ul{
 	font-family: 'Donegal One', serif;
 	font-size: 14px;
 	line-height: 18px;
+}
+ul{
+	list-style: decimal;
+	padding-bottom: 20px;
+}
+ul{
 	list-style: disc;
 }
 .bullets{
@@ -356,6 +356,33 @@ ul{
 	font-style: italic;
 	font-weight: normal;
 }
+.about-page img{
+	display: inline-block;
+	margin: 0 auto;
+}
+p img{
+	float: right;
+}
+.about-page h5,
+.experiments-page h5,
+.journal-page h5{
+	padding-bottom: 20px;
+}
+.contact-social img{
+	position: relative;
+	top: 7px;
+}
+.contact-social a{
+	color: #888;
+}
+.contact-social a:hover{
+	color: green;
+}
+video{
+	border: 3px solid #888;
+	height: 200px;
+	padding: 5px;
+}
 /*----header----*/
 
 header{
@@ -381,11 +408,10 @@ header{
 /*----footer----*/
 
 footer{
-	padding-bottom: 50px;
 }
 footer p{
 	color: rgb(100,100,100);
 	font-size: 12px;
-	line-height: 20px;
+	line-height: 100px;
 	text-align: center;
 }

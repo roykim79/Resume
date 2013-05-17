@@ -143,8 +143,6 @@ li{
 	width: 50px;
 }
 
-
-
 /* Misc Styles */
 
 .day{
@@ -203,7 +201,10 @@ li{
 .tr{
 	border-top-right-radius: 5px;
 }
-
+img{
+	position: relative;
+	top: 10px;
+}
 /* Header */
 
 
