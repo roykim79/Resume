@@ -51,23 +51,44 @@
 				<div class="g1here">contact</div>
 			</nav>
 		</header>
-		<section class="container">
-			<dl class="contact-social">
+		<section class="container group">
+			<dl class="contact-social col-2">
 				<dt>Phone</dt>
 				<dd>630.723.9324</dd>
 				<dt>Email</dt>
-				<dd><a href="mailto:rykim79@gmail.com">rykim79@gmail.com</a></dd>
+				<dd><a href="mailto:rykim79@gmail.com" target="blank">rykim79@gmail.com</a></dd>
 				<dt>Social</dt>
 				<dd>
-					<a href="#"><i><img src="img/twitter-icon.png"></i> Twitter</a>
+					<a href="http://twitter.com/roykimchicago" target="blank"><i><img src="img/twitter-icon.png"></i> Twitter</a>
 				</dd>
-				<dd><a href="#">
+				<dd><a href="http://www.facebook.com/roy.kim.925059" target="blank">
 					<i><img src="img/facebook-icon.png"></i> Facebook</a>
 				</dd>
-				<dd><a href="#">
+				<dd><a href="http://instagram.com/roykimchicago" target="blank">
 					<i><img src="img/instagram-icon.png"></i> Instagram</a>
 				</dd>
 			</dl>
+			<div class="col-2">
+				<form>
+					<h5 class="center">Request More Information</h5>
+					<label for="name">Name</label>
+					<input type="text" name="user_name" id="user_name">
+					<label for="email">Email</label>
+					<input type="email" name="user_email" id="user_email">
+					<label for="tel">Phone</label>
+					<input type="tel" name="telephone" id="telephone">
+					<label for="reason">Reason</label>
+					<select name="reason">
+						<option value="">Please Choose</option>
+						<option value="complaint">Complaint</option>
+						<option value="compliment">Compliment</option>
+						<option value="availability">Availability</option>
+					</select>
+					<label>Description
+						<textarea name="description" placeholder="Type in this box"></textarea>
+					</label>
+				</form>
+			</div>
 		</section>
 		<footer class="container">
 			<p>&copy; Copyright Roy Kim - No Rights Reserved</p>

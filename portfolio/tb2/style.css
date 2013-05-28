@@ -139,6 +139,11 @@ p{
 	font-size: 16px;
 	line-height: 20px;
 }
+.bio p{
+	font-family: 'Roboto Condensed', helvetica, arial, sans-serif;
+	font-size: 18px;
+	line-height: 27px;
+}
 
 /* Links */
 
@@ -173,10 +178,13 @@ ol{
 	text-align: center;
 }
 .pad-top{
-	padding-top: 20px;
+	padding-top: 10px;
 }
 img{
-	padding: 10px 0;
+	padding: 10px 10px;
+}
+.left{
+	float: left;
 }
 .right{
 	float: right;
@@ -224,6 +232,10 @@ footer{
 }
 footer li{
 	display: inline;
+}
+footer img{
+	position: relative;
+	top: 15px;
 }
 footer .col-x{
 	float: right;

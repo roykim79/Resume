@@ -1,0 +1,258 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+b, strong{
+	font-weight: bold;
+}
+i, em{
+	font-style: italic;
+}
+
+/*---- clear fix ----*/
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+	clear: both;
+	*zoom: 1;
+}
+
+/*----custom styles----*/
+
+body{
+	font-family: 'Droid Serif', Serif;
+}
+
+/*----typograpgy----*/
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Droid Sans', 'helvetica neue', helvetica, arial, sans-serif;
+}
+h1{
+	font-size: 48px;
+	line-height: 60px;
+}
+h2{
+	font-size: 36px;
+	line-height: 45px;
+}
+h3{
+	font-size: 24px;
+	line-height: 30px;
+}
+h4{
+	font-size: 18px;
+	line-height: 22px;
+}
+h5{
+	font-size: 16px;
+	line-height: 20px;
+}
+p{
+	font-size: 16px;
+	line-height: 20px;
+}
+
+/*----links----*/
+
+a{
+	color: #bbb;
+	font-family: 'Open Sans Condensed','helvetica neue', helvetica, arial, sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+}
+a:hover{
+	color: #ddd;
+}
+/*----lists----*/
+
+/*----misc styles----*/
+
+.center{
+	text-align: center;
+}
+section{
+	padding: 15px 0;
+}
+.bling{
+	color: rgb(55,125,60);
+	font-weight: 700;
+}
+.vertical_gap{
+	height: 30px;
+}
+/*----header----*/
+header{
+	background: rgb(200,200,200);
+	border-bottom: 1px solid #333;
+	position: fixed;
+	width: 100%;
+}
+.header_fix{
+	height: 60px;
+}
+header h1{
+	color: #fff;
+	letter-spacing: -2px;
+	font-weight: 400;
+	text-shadow: 1px 0 0 rgb(150,150,150);
+}
+header p{
+	color: #444;
+	font-family: 'Open Sans Condensed','helvetica neue', arial, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	position: relative;
+		top: 27px;
+}	
+#banner_1{
+	background: radial-gradient(rgb(40,160,20),rgb(25,110,45));
+	height: 300px;
+}
+#banner_2{
+	background: url(img/bridge.jpg) no-repeat 0 -400px;
+	height: 400px;
+}
+#banner_3{
+	background: url(img/cranes.jpg) no-repeat 0 -400px;
+	height: 400px;
+}
+.banner_text{
+	color: #fff;
+	padding-top: 50px;
+}
+.banner_text_left,
+.banner_text_right{
+	color: #fff;
+	margin-top: 60px;
+	padding: 40px;
+	width: 450px;
+}
+.banner_text_left{
+	background: rgba(220,100,60,.6);
+	float: left;
+}
+.banner_text_right{
+	background: rgba(55,90,200,.6);
+	float: right;
+}
+.banner_text_left a,
+.banner_text_right a{
+	border: 1px solid #fff;
+	color: #fff;
+	display: block;
+	margin-top: 15px;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+	width: 100px;
+}
+.banner_text_left a:hover,
+.banner_text_right a:hover{
+	background-color: rgba(255,255,255,.6);
+	color: rgb(65,100,60);
+}
+/*----nav----*/
+.nav_bar{
+	float: right;
+}
+.nav_bar a{
+	display: inline-block;
+	color: #fff;
+	font-family: 'Open Sans Condensed','helvetica neue', helvetica, arial, sans-serif;
+	font-size: 18px;
+	line-height: 60px;
+	padding: 0 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.nav_bar a:hover{
+	color: rgb(55,125,60);
+}
+.nav_1{
+	background: rgb(190,190,190);
+}
+.nav_2{
+	background: rgb(180,180,180);
+}
+.nav_3{
+	background: rgb(170,170,170);
+}
+.nav_4{
+	background: rgb(160,160,160);
+}
+/*----footer----*/
+footer{
+	background: linear-gradient(to top right, rgb(50,25,125),rgb(40,170,220));
+	padding-top: 20px;
+}
+footer a{
+	color: #ccc;
+	font-family: 'Open Sans Condensed','helvetica neue', helvetica, arial, sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+}
+footer a:hover{
+	color: rgb(80,200,120);
+}
+footer li{
+	padding: 5px 0;
+}
+footer ul{
+	list-style: none;
+	padding: 5px 0;
+}
+.sub_footer{
+	background-color: #ccc;
+	color: #444;
+	padding: 20px;
+	text-align: center;
+}
+.sub_footer p{
+	font-size: 12px;
+}

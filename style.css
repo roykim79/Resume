@@ -64,7 +64,6 @@ i, em{
 }
 .col-2 {
 	width: 460px;
-
 }
 .col-3 {
 	border-bottom: 1px solid #888888;
@@ -383,6 +382,45 @@ video{
 	height: 200px;
 	padding: 5px;
 }
+form{
+	font-family: 'Donegal One', serif;
+	font-size: 14px;
+}
+form h5{
+	padding-bottom: 10px;
+	text-decoration: underline;
+}
+label{
+	font-family: 'Roboto Condensed', helvetica, arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+input,
+label,
+select,
+textarea{
+	display: block;
+}
+input{
+	font-family: 'Donegal One', serif;
+	font-size: 14px;
+	padding: 5px;
+	width: 200px;
+}
+input,
+textarea{
+	border: 1px solid #888;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+textarea{
+	font-family: 'Donegal One', serif;
+	font-size: 14px;
+	height: 150px;
+	width: 100%;
+}
+
 /*----header----*/
 
 header{
