@@ -1,0 +1,190 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+b, strong{
+	font-weight: bold;
+}
+i, em{
+	font-style: italic;
+}
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+	clear: both;
+	*zoom: 1;
+}
+
+/*----custom styles----*/
+
+body{
+	background: rgb(220,225,160);
+	font-family: helvetica, arial, sans-serif;
+	text-align: left;
+}
+
+/*----typograpgy----*/
+
+p{
+	font-size: 16px;
+	line-height: 20px;
+}
+table{
+	border-radius: 5px;
+	background: #fff;
+	margin: 30px auto;
+}
+thead{
+	background: rgb(110,150,250);
+}
+td{
+	padding-left: 15px;
+}
+th{
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+th:first-child{
+	border-right: 1px solid #888;
+	border-top-left-radius: 5px;
+}
+th:last-child{
+	border-left: 1px solid #888;
+	border-top-right-radius: 5px;
+}
+
+.airline,
+.airport{
+	color: #888;
+	font-size: 10px;
+	line-height: 14px;
+}
+.airline{
+	padding-right: 10px;
+	position: relative;
+	top: -8px;
+}
+.airport{
+	padding-bottom: 10px;
+	padding-right: 30px;
+	width: 150px;
+}
+.am_pm{
+	font-variant: small-caps;
+}
+.bot_left{
+	border-bottom-left-radius: 5px;
+}
+.bot_right{
+	border-bottom-right-radius: 5px;
+}
+.city{
+	color: rgb(110,150,250);
+	font-weight: bold;
+}
+.dot{
+	border-radius: 50%;
+	display: inline-block;
+	height: 5px;
+	position: relative;
+	width: 5px;
+	top: -2px;
+}
+.logo{
+	padding: 5px;
+	vertical-align: top;
+}
+.flight,
+.time{
+	color: #111;
+	font-size: 14px;
+	font-weight: bold;
+	padding-bottom: 8px;
+	padding-top: 10px;
+}
+.flight{
+	vertical-align: top;
+}
+.status{
+	font-size: 14px;
+	font-weight: bold;
+	text-indent: 50px;
+}
+.cancelled{
+	color: rgb(250,0,0);
+}
+.cancelled .dot{
+	background: rgb(250,0,0);
+}
+.delayed{
+	color: rgb(220,190,10);
+}
+.delayed .dot{
+	background: rgb(220,190,10);
+}
+.on_time{
+	color: rgb(45,180,55);
+}
+.on_time .dot{
+	background: rgb(45,180,55);
+}
+.status,
+.airport{
+	background: linear-gradient(rgb(255,255,255),rgb(250,250,250) ,rgb(240,240,240));
+}
+.airport,
+.city,
+.time{
+	border-left: 1px solid #888;
+}
+.logo,
+.flight,
+.time{
+	border-top: 1px solid #888;
+}

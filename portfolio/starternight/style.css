@@ -68,6 +68,7 @@ body{
 	font-family: 'Droid Serif', Serif;
 }
 
+
 /*----typograpgy----*/
 
 h1, h2, h3, h4, h5, h6{
@@ -100,15 +101,6 @@ p{
 
 /*----links----*/
 
-a{
-	color: #bbb;
-	font-family: 'Open Sans Condensed','helvetica neue', helvetica, arial, sans-serif;
-	font-size: 18px;
-	text-decoration: none;
-}
-a:hover{
-	color: #ddd;
-}
 /*----lists----*/
 
 /*----misc styles----*/
@@ -116,20 +108,34 @@ a:hover{
 .center{
 	text-align: center;
 }
-section{
-	padding: 15px 0;
-}
 .bling{
 	color: rgb(55,125,60);
 	font-weight: 700;
 }
-.vertical_gap{
-	height: 30px;
+.section_nav{
+	background: linear-gradient(rgb(250,250,250),rgb(240,240,240));
+	padding-left: 50px;
+	width: 100%;
+}
+.section_nav a{
+	background: linear-gradient(rgb(245,245,245),rgb(220,220,220));
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	color: #666;
+	display: block;
+	margin: 20px 20px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+.section_nav a:hover{
+	background: linear-gradient(rgb(235,235,235),rgb(205,205,205));
 }
 /*----header----*/
 header{
-	background: rgb(200,200,200);
-	border-bottom: 1px solid #333;
+	background: linear-gradient(rgb(245,255,245), rgb(190,195,220));
+	border-bottom: 1px solid #888;
 	position: fixed;
 	width: 100%;
 }
@@ -137,13 +143,13 @@ header{
 	height: 60px;
 }
 header h1{
-	color: #fff;
+	color: #666;
 	letter-spacing: -2px;
 	font-weight: 400;
-	text-shadow: 1px 0 0 rgb(150,150,150);
 }
+
 header p{
-	color: #444;
+	color: #666;
 	font-family: 'Open Sans Condensed','helvetica neue', arial, sans-serif;
 	font-size: 24px;
 	font-weight: bold;
@@ -151,8 +157,17 @@ header p{
 		top: 27px;
 }	
 #banner_1{
-	background: radial-gradient(rgb(40,160,20),rgb(25,110,45));
-	height: 300px;
+	background: url(img/cranes.jpg) no-repeat 0 -400px;
+	height: 400px;
+}
+#banner_1 h2{
+	font-size: 48px;
+	line-height: 70px;
+}
+#banner_1 p{
+	font-size: 21px;
+	line-height: 28px;
+	padding-top: 30px;
 }
 #banner_2{
 	background: url(img/bridge.jpg) no-repeat 0 -400px;
@@ -163,8 +178,12 @@ header p{
 	height: 400px;
 }
 .banner_text{
+	background: radial-gradient(
+		rgba(45,145,25,.7),
+		rgba(25,120,25,.8));
 	color: #fff;
-	padding-top: 50px;
+	margin-top: 40px;
+	padding-top: 30px;
 }
 .banner_text_left,
 .banner_text_right{
@@ -178,7 +197,7 @@ header p{
 	float: left;
 }
 .banner_text_right{
-	background: rgba(55,90,200,.6);
+	background: rgba(55,125,60,.6);
 	float: right;
 }
 .banner_text_left a,
@@ -194,8 +213,7 @@ header p{
 }
 .banner_text_left a:hover,
 .banner_text_right a:hover{
-	background-color: rgba(255,255,255,.6);
-	color: rgb(65,100,60);
+	background-color: rgba(255,255,255,.3);
 }
 /*----nav----*/
 .nav_bar{
@@ -203,28 +221,18 @@ header p{
 }
 .nav_bar a{
 	display: inline-block;
-	color: #fff;
+	color: #666;
+	float: left;
 	font-family: 'Open Sans Condensed','helvetica neue', helvetica, arial, sans-serif;
-	font-size: 18px;
+	font-size: 14px;
+	font-weight: bold;
 	line-height: 60px;
 	padding: 0 10px;
 	text-decoration: none;
-	text-transform: uppercase;
 }
 .nav_bar a:hover{
-	color: rgb(55,125,60);
-}
-.nav_1{
-	background: rgb(190,190,190);
-}
-.nav_2{
-	background: rgb(180,180,180);
-}
-.nav_3{
-	background: rgb(170,170,170);
-}
-.nav_4{
-	background: rgb(160,160,160);
+	color: #ddd;
+	background: rgb(110,120,110);
 }
 /*----footer----*/
 footer{
