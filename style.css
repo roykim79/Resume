@@ -351,22 +351,24 @@ ul{
 .bullets{
 	padding: 0px 20px;
 }
-.loc{
+.spec{
 	color: #888888;
 	font-size: 14px;
 	font-style: italic;
 	font-weight: normal;
 }
-.about-page img{
-	display: inline-block;
-	margin: 0 auto;
+.tsl-logo{
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.uiuc-logo{
+	margin-left: 50px;
+	margin-top: 10px;
 }
 p img{
 	float: right;
 }
-.about-page h5,
-.experiments-page h5,
-.journal-page h5{
+.show-page h5{
 	padding-bottom: 20px;
 }
 .contact-social img{

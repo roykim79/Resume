@@ -67,13 +67,19 @@ i, em{
 body{
 	font-family: 'helvetica neue', helvetica, arial, sans-serif;
 }
-.show_page{
-}
-.label{
-	background: rgba(55,125,60,.3);
-	margin-bottom: 20px;
-}
 
+.label{
+	background: rgba(55,125,60,1);
+	margin-bottom: 200px;
+	margin-top: 60px;
+	position: fixed;
+	text-transform: uppercase;
+	width: 100%;
+	z-index: 1;
+}
+.header-fix{
+	height: 94px;
+}
 /*----typograpgy----*/
 
 h1, h2, h3, h4, h5, h6{
@@ -92,6 +98,8 @@ h3{
 	line-height: 34px;
 }
 h4{
+	border-bottom: 2px solid #ccc;
+	padding: 5px 10px;
 	font-size: 18px;
 	line-height: 22px;
 }
@@ -108,14 +116,6 @@ header h1{
 	letter-spacing: -2px;
 	font-weight: 400;
 }
-header p{
-	color: #666;
-	font-family: 'Open Sans Condensed','helvetica neue', arial, sans-serif;
-	font-size: 24px;
-	font-weight: bold;
-	position: relative;
-		top: 27px;
-}
 .label h3{
 	color: #555;
 	font-family: 'Open Sans Condensed','helvetica neue', helvetica, arial, sans-serif;
@@ -124,10 +124,6 @@ header p{
 }
 footer h5{
 	text-shadow: 0 1px 1px #9d9;
-}
-.show_page h4{
-	border-bottom: 2px solid #ccc;
-	padding: 5px 10px; 
 }
 .show_page section h5{
 	margin-bottom: 20px;
@@ -142,18 +138,17 @@ footer h5{
 	text-decoration: underline;
 }
 /*----lists----*/
-.co_info dt{
+dt{
 	display: block;
 	font-family: 'Droid Sans', 'helvetica neue', helvetica, arial, sans-serif;
 	margin-bottom: 10px;
 	padding-top: 10px;
 }
-.co_info dd{
+dd{
 	font-family: 'Open Sans Condensed','helvetica neue', helvetica, arial, sans-serif;
 	padding-left: 10px;	
 	line-height: 20px;
 }
-
 
 /*----misc styles----*/
 
@@ -201,14 +196,15 @@ table{
 th{
 	background: linear-gradient(#eef,#ccd);
 	border: 1px solid #999;
-	font-family: 'Droid Sans', 'helvetica neue', helvetica, arial, sans-serif;
-	font-size: 21px;
+	font-family: 'Open Sans Condensed','helvetica neue', helvetica, arial, sans-serif;
+	font-size: 18px;
 	font-weight: 500;
 	padding: 10px;
 }
 td{
 	background: #f9f9fe;
-	font-family: 'Open Sans Condensed','helvetica neue', helvetica, arial, sans-serif;
+	font-family: 'helvetica neue', helvetica, arial, sans-serif;
+	font-size: 14px;
 	border: 1px solid #888;
 	padding: 10px 15px;
 }
@@ -229,7 +225,10 @@ tfoot td{
 header{
 	background: linear-gradient(rgb(245,255,245), rgb(190,195,220));
 	border-bottom: 1px solid #888;
+	margin-bottom: 60px;
+	position: fixed;
 	width: 100%;
+	z-index: 1;
 }
 #banner_1{
 	background: url(img/cranes.jpg) no-repeat 0 -400px;
@@ -309,17 +308,17 @@ header{
 }
 
 footer a{
-	color: #ccc;
+	color: #ddd;
 	font-family: 'Open Sans Condensed','helvetica neue', helvetica, arial, sans-serif;
 	font-size: 14px;
 	text-decoration: none;
 }
 footer a:hover{
-	color: rgb(55,60,125);
+	color: #222;
 }
 /*----footer----*/
 footer{
-	background: linear-gradient(to top right, rgb(50,145,45),rgb(40,220,170));
+	background: linear-gradient(to top right, rgba(55,125,60,.8), rgba(55,125,60,.5));
 	padding-top: 20px;
 }
 
@@ -337,5 +336,6 @@ footer ul{
 	text-align: center;
 }
 .sub_footer p{
+	font-family: serif;
 	font-size: 12px;
 }
