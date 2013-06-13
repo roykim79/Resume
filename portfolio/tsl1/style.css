@@ -175,6 +175,9 @@ ul{
 	font-size: 14px;
 	list-style: disc;
 }
+.navbar li{
+	list-style: none;
+}
 .bullets{
 	padding: 0px 20px;
 }
@@ -225,7 +228,6 @@ header span{
 
 /* Nav */
 /* Nav */
-/* Nav */
 
 .navbar{
 	float: right;
@@ -233,7 +235,6 @@ header span{
 }
 .navbar li a{
 	color: #FFFFFF;
-	display: inline-block;
 	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	float: left;
@@ -241,13 +242,16 @@ header span{
 	padding-left: 10px;
 	padding-right: 10px;
 }
-.navbar a{
+.navbar a,
+.navbar li{
+	display: inline-block;
+	float: left;
 	line-height: 75px;
 	text-decoration: none;
 }
-.navbar a:hover{
+/*.navbar a:hover{
 	color: rgb(175,175,175);
-}
+}*/
 .navbar li a:hover{
 	background: linear-gradient(rgba(70,75,80,1), rgba(110,130,165,1));
 	color: rgb(175,175,175);

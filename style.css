@@ -205,9 +205,6 @@ i, em{
 	background: url(img/eames-chair.png) 600px 320px no-repeat;
 	margin-top: 20px;
 }
-.contact{
-
-}
 section{
 	padding-left: 40px;
 	padding-top: 20px;
@@ -215,7 +212,7 @@ section{
 
 /*----typograpgy----*/
 
-h1, h2, h3{
+h1, h2, h3, .logo{
 	font-family: 'Abril Fatface', 'Donegal One', serif;
 	font-weight: bold;
 }
@@ -226,7 +223,8 @@ h4, h5, h6{
 .main{
 	padding-left: 190px;
 }
-h1{
+h1,
+.logo{
 	color: rgb(245,245,245);
 	font-size: 48px;
 	line-height: 90px;
@@ -238,6 +236,7 @@ h1{
 				1px 1px 0px black;
 }
 h2{
+	color: #000;
 	font-size: 48px;
 	line-height: 60px;
 	padding-left: 20px;
@@ -280,14 +279,48 @@ a{
 	color: white;
 }
 a:hover{
-	color: #888;
+	/*color: #aaa;*/
 }
 .g1 a:hover{
 	color: white;
+	transition: .8s;
 }
 .g1b a:hover{
 	color: black;
+	transition: .8s;
 }
+.g1 a:after,
+.g1b a:after{
+	color: red;
+	content: "click me!";
+	display: none;
+	position: relative;
+		top: -40px;
+}
+.g1 a:hover:after,
+.g1b a:hover:after{
+	display: block;
+}
+
+/**************************************/
+/*********************** fix ********************/
+/************************** a *********************/
+/********************* problem **************/
+/************************** here **************/
+/******** some hovers work, some don't *****************************************/
+
+
+.g1here:after{
+	color: #000;
+	content: "you are here";
+	display: none;
+	position: relative;
+		top: -40px;
+}
+.g1here:hover:after{
+	display: block;
+}
+
 .button{
 	border-radius: 50%;
 	display: block;
