@@ -317,10 +317,20 @@ a:hover{
 	position: relative;
 		top: -40px;
 }
+.home .g1here:hover:after{
+	color: #000;
+	content: "you are here";
+		display: none;
+		position: relative;
+			left: 100px;
+			top: -100px;
+}
 .g1here:hover:after{
 	display: block;
 }
-
+.home .g1here:hover:after{
+	display: inline-block;
+}
 .button{
 	border-radius: 50%;
 	display: block;
