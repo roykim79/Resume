@@ -278,9 +278,6 @@ a{
 .g1b a{
 	color: white;
 }
-a:hover{
-	/*color: #aaa;*/
-}
 .g1 a:hover{
 	color: white;
 	transition: .8s;
@@ -295,41 +292,33 @@ a:hover{
 	content: "click me!";
 	display: none;
 	position: relative;
-		top: -40px;
+		bottom: 40px;
 }
+
 .g1 a:hover:after,
 .g1b a:hover:after{
 	display: block;
 }
 
-/**************************************/
-/*********************** fix ********************/
-/************************** a *********************/
-/********************* problem **************/
-/************************** here **************/
-/******** some hovers work, some don't *****************************************/
-
-
-.g1here:after{
+.g1here:hover:after,
+.home .g1here:hover:after{
 	color: #000;
 	content: "you are here";
 	display: none;
+	
+}
+.g1here:hover:after{
 	position: relative;
 		top: -40px;
 }
 .home .g1here:hover:after{
-	color: #000;
-	content: "you are here";
-		display: none;
-		position: relative;
-			left: 100px;
-			top: -100px;
+	position: relative;
+		left: 100px;
+		top: -100px;
 }
-.g1here:hover:after{
-	display: block;
-}
+.g1here:hover:after,
 .home .g1here:hover:after{
-	display: inline-block;
+	display: block;
 }
 .button{
 	border-radius: 50%;
@@ -366,31 +355,17 @@ ul{
 	font-size: 14px;
 	line-height: 18px;
 }
-ul{
+ol{
 	list-style: decimal;
 	padding-bottom: 20px;
 }
 ul{
 	list-style: disc;
-}
-.bullets{
-	padding: 0px 20px;
 }
 
 /*----misc styles----*/
 
-li{
-	line-height: 24px;
-}
-ol{
-	font-size: 14px;
-	list-style: decimal;
-	padding-bottom: 20px;
-}
-ul{
-	font-size: 14px;
-	list-style: disc;
-}
+
 .bullets{
 	padding: 0px 20px;
 }
@@ -486,7 +461,6 @@ header{
 	float: right;
 	height: 220px;
 	margin-top: -220px;
-	overflow: hidden;
 	width: 550px;
 }
 
